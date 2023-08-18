@@ -6,6 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { WebView } from 'react-native-webview';
 import { BottomNavigation } from "../common_components/BottomNavigation";
+import { Header } from "../common_components/Header";
 
 
 export const AccountSummary = ({ navigation }: { navigation: any }) => {
@@ -80,6 +81,7 @@ export const AccountSummary = ({ navigation }: { navigation: any }) => {
 
     return (
         <>
+            <Header/>
             <ScrollView>
                 {
                     Platform.OS === "web" ? (
