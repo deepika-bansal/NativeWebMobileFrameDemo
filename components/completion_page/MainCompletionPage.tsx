@@ -14,16 +14,17 @@ import { CompletionPage } from './CompletionPage';
 import { ButtonsComp } from './ButtonsComp';
 
 
-function MainCompletionPage({navigation}: {navigation: any}): JSX.Element {
-  
+function MainCompletionPage({ navigation }: { navigation: any }): JSX.Element {
+
   return (
-    <> 
+    <>
       <Header />
       <ScrollView>
         <CompletionPage navigation={navigation} />
         <Footer />
       </ScrollView>
-      <ButtonsComp navigation={navigation} />
+      {/* <ButtonsComp navigation={navigation} /> */}
+      <BottomNavigation navigation={navigation} />
     </>
   );
 }
